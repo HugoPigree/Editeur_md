@@ -12,17 +12,17 @@ function EvenementsHistoriques() {
       .then((response) => response.json()) // Prend la réponse brute de l'API et la conversion en objet JSON.
       .then((data) => {
         // Récupère seulement les événements
-        const events = data.data.Events.slice(0, 5); // Limite à 5 événements
+        const events = data.data.Events.slice(0, 4); // Limite à 5 événements
         setEvenements(events);
       });
-  }, []); //[]garantit que useEffect est exécutée uniquement lors du premier rendu du composant.
+  });
 
   return (
     <div>
       <h1>Événements Historiques</h1>
       <ul>
-        {evenements.map((event, index) => (
-          <li key={index}>
+        {evenements.map((event) => (
+          <li>
             {event.year} - {event.text}
           </li>
         ))}
@@ -30,7 +30,4 @@ function EvenementsHistoriques() {
     </div>
   );
 }
-
 export default EvenementsHistoriques;
-
-// key va servir pour que react identifie chaque element de la liste pour eviter tout conflits si la liste change etc.
