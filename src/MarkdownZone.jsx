@@ -94,8 +94,10 @@ export default Markdownzone;
 
 // Pour la ligne 70 on a premierement fait <div>{marked(markdown)}</div> sauf que nous avons eu le html sous forme de balise (HTML brut) , ce qui a été réglé par la propriété  dangerouslySetInnerHTML
 
+// https://www.youtube.com/shorts/XINblOkpkPc?app=desktop vidéo du dangerouslySetInnerHTML
+
 // Pour l'export solution trouvé dans cette vidéo https://youtu.be/xf0bJzaRlFA?si=_q2LQPGVnpWUdHaG
 
 // Pour l'import https://stackoverflow.com/questions/51272255/how-to-use-filereader-in-react
 
-// On a préférer marked à showdown pour des raisons de rapidités et de simplicité, Showdown conviendra mieux cependant pour un projet plus personnalisés
+// On a préféré marked à showdown pour des raisons de rapidités et de simplicité, Showdown conviendra mieux cependant pour un projet plus personnalisés
