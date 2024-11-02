@@ -1,0 +1,61 @@
+.DialogRecette {
+    text-align: center;
+    float: left;
+  }
+  
+  button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: red;
+  }
+  
+  .StyleDialog {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0,0.5);
+    color: black;
+    
+  }
+  
+  .DialogContenu {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  .FermerDialog {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .FermerDialog:hover,
+  .FermerDialog:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
