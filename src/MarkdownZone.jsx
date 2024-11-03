@@ -1,8 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { marked } from "marked";
+import { useNavigate } from "react-router-dom";
 
 function Markdownzone() {
+  const navigate = useNavigate();
+
+  function Retour() {
+    navigate("/");
+  }
   // Création d'état pour le contenu du fichier
   const [markdown, setMarkdown] = useState(""); // État pour le contenu en Markdown
   const [fileName1, setFileName] = useState("Document.md"); // État pour le nom du fichier, par défaut un nom
@@ -41,11 +47,11 @@ function Markdownzone() {
   // EDIT
 
   return (
-    <div>
-      <h2>Éditeur de Markdown</h2>
+    <div className="bodyMd">
+      <h2 className="h2md">Éditeur de Markdown</h2>
 
-      <div>
-        <label>Titre du fichier :</label>
+      <div className="titremd">
+        <h2 className="h2titre">Titre du fichier :</h2>
         <input
           type="text"
           placeholder="Titre du fichier"
@@ -55,8 +61,9 @@ function Markdownzone() {
       </div>
 
       <div>
-        <h3>Édition du texte</h3>
+        <h2 className="h3md">Édition du texte</h2>
         <textarea
+          className="Textmd"
           value={markdown} // Liaison de markdown avec le textarea
           onChange={(e) => setMarkdown(e.target.value)} // Mise à jour de markdown quand le texte change e=evenement et viens modifier la valeur de markdown
           placeholder="Écris ici ton contenu en Markdown"
@@ -65,27 +72,33 @@ function Markdownzone() {
       </div>
 
       <div>
-        <h3>Prévisualisation</h3>
+        <h2 className="prevuh2">Prévisualisation</h2>
         <div
+          className="prevu"
           dangerouslySetInnerHTML={{ __html: marked(markdown) }} // 1. dangerouslySetInnerHTML est utilisé pour insérer du HTML brut dans un composant React, ignore la securité contre les attaques XSS
           // __html permet d'indiquer à React que nous allons lui donner du html brut
           // marked() permet de convertir le markdown en html.
-          style={{
-            border: "1px solid #ccc",
-            padding: "10px",
-            width: "50%",
-          }}
         ></div>
       </div>
 
       <div style={{ marginTop: "10px" }}>
-        <button onClick={exportMarkdown}>Exporter en Markdown</button>
+        <button className="buttonMd" onClick={exportMarkdown}>
+          Exporter en Markdown
+        </button>
       </div>
 
       <div>
-        <h3>Importer un fichier Markdown</h3>
-        <input type="file" accept=".md" onChange={importMarkdown} />
+        <h3 className="h3md">Importer un fichier Markdown</h3>
+        <input
+          className="inputMd"
+          type="file"
+          accept=".md"
+          onChange={importMarkdown}
+        />
       </div>
+      <button className="buttonMd" onClick={Retour}>
+        Retour à l'Accueil
+      </button>
     </div>
   );
 }

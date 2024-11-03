@@ -1,0 +1,8 @@
+.mocktail {
+  background-color: rgb(18, 18, 17);
+  border: 2px solid red;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
