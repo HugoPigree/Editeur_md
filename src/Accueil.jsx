@@ -20,10 +20,6 @@ const Accueil = () => {
     <div>
       <div className="Container">
         <Header />
-        <div className="Top">
-          <Time></Time>
-        </div>
-
         <div className="main">
           <div className="left">
             <Blague></Blague>
@@ -32,9 +28,9 @@ const Accueil = () => {
               <Recette></Recette>
             </div>
           </div>
-
           <div className="center">
             <div>
+              <Time />
               <button className="markdown-button" onClick={Markdownzone}>
                 Creer un fichier Markdown
               </button>

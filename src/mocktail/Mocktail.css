@@ -1,8 +1,43 @@
-.mocktail {
-  background-color: rgb(18, 18, 17);
-  border: 2px solid red;
-  align-items: center;
-  padding: 20px;
+.mocktail-container {
+  background-color: #e0e0e0;
+  border: 3px outset #8b8b8b;
   border-radius: 10px;
-  margin: 20px auto;
+  width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Tahoma, Geneva, sans-serif;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.mocktail-card {
+  background-color: #fff;
+  padding: 15px;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mocktail-title {
+  color: #003366;
+  font-size: 24px;
+  text-shadow: 1px 1px #ffffff;
+}
+
+.mocktail-name {
+  color: #333;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.mocktail-image {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #8b8b8b;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loading-text {
+  font-size: 18px;
+  color: #666;
 }

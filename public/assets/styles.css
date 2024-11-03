@@ -6,6 +6,7 @@
 }
 
 body {
+  background-image: url("./fond.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -153,4 +154,37 @@ h1 {
 
 .h2titre {
   padding: 0.5em;
+}
+
+.markdown-button {
+  border: 3px outset #8b8b8b;
+  background-color: #dcdcdc;
+  color: black;
+  font-family: Tahoma, Geneva, sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  text-shadow: 1px 1px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.markdown-button:hover {
+  background-color: #c0c0c0;
+  border: 3px inset #8b8b8b;
+  color: black;
+}
+
+.markdown-button:active {
+  background-color: #a9a9a9;
+  border: 3px inset #8b8b8b;
+  color: black;
+  box-shadow: none;
+}
+
+.center {
+  text-align: center;
 }

@@ -11,32 +11,37 @@ function MocktailOfTheDay() {
     )
       .then((res) => res.json())
       .then((data) => {
-        setMocktails(data.drinks); // Stocker toutes les boissons
-        pickRandomMocktail(data.drinks); // Sélectionner une boisson aléatoirement
+        setMocktails(data.drinks);
+        pickRandomMocktail(data.drinks);
       })
       .catch((err) => console.error("Erreur : ", err));
   }
 
-  // Fonction pour sélectionner un mocktail aléatoirement
   function pickRandomMocktail(drinks) {
     const randomIndex = Math.floor(Math.random() * drinks.length);
     setRandomMocktail(drinks[randomIndex]);
   }
 
   useEffect(() => {
-    fetchDrinks(); // Appel API
+    fetchDrinks();
   }, []);
 
   return (
-    <div className="moctail">
+    <div className="mocktail-container">
       {randomMocktail ? (
-        <div>
-          <h1>Mocktail du jour</h1>
-          <p>Le mocktail du jour est : {randomMocktail.strDrink}</p>
-          <img src={randomMocktail.strDrinkThumb} alt="" />
+        <div className="mocktail-card">
+          <h1 className="mocktail-title">Mocktail du jour</h1>
+          <p className="mocktail-name">
+            Le mocktail du jour est : {randomMocktail.strDrink}
+          </p>
+          <img
+            className="mocktail-image"
+            src={randomMocktail.strDrinkThumb}
+            alt=""
+          />
         </div>
       ) : (
-        "Chargement..."
+        <p className="loading-text">Chargement...</p>
       )}
     </div>
   );

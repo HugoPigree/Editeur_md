@@ -1,21 +1,51 @@
-.container-api {
-    background-color: rgb(18, 18, 17);
-    border: 2px solid red;
-    color: white;
-    align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-  }
-  
- 
-.list {
-    list-style: none;
-    padding: 0;
-    color: yellow;
-  }
+.blague-container {
+  background: linear-gradient(to bottom, #f0f0f0, #c0c0c0);
+  border: 2px outset #aaa;
+  color: #000;
+  font-family: Verdana, Geneva, sans-serif;
+  width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
 
-.list li {
-    margin : 10px 0;
-    text-align: left;
-  }
+.blague-title {
+  font-size: 20px;
+  color: #003366;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.blague-list {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.blague-item {
+  background-color: #e0e0ff;
+  border: 1px solid #999;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: inset 1px 1px 2px #fff, inset -1px -1px 2px #ccc;
+}
+
+.blague-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: 2px outset #6e6e6e;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.blague-button:hover {
+  background-color: #45a049;
+}
