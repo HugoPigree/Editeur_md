@@ -1,0 +1,16 @@
+.header-bar {
+    color: white;
+    padding: 15px; 
+    text-align: center; 
+    top: 0;
+    left: 0; 
+    right: 0; 
+    border-bottom: 2px solid white;
+  }
+  
+  .header-bar h1 {
+    margin: 0; 
+    font-size: 3em; 
+
+  }
+  

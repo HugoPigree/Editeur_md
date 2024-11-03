@@ -18,9 +18,9 @@ function EvenementsHistoriques() {
   });
 
   return (
-    <div>
+    <div className="container-api">
       <h1>Événements Historiques</h1>
-      <ul>
+        <ul className="list">
         {evenements.map((event) => (
           <li>
             {event.year} - {event.text}

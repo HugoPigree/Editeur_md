@@ -5,11 +5,12 @@ import { useNavigate } from "react-router-dom";
 import Time from "./DateHeure/DateHeure";
 import Citation from "./Citation/Citation";
 import Blague from "./Blague/Blague";
-// eslint-disable-next-line no-unused-vars
 import React from "react";
-import Markdownzone from "./MarkdownZone";
+import Header from "./Header";
+import "../public/assets/styles.css"
 
-const Acceuil = () => {
+
+const Accueil = () => {
   const navigate = useNavigate();
 
   function Markdownzone() {
@@ -19,13 +20,19 @@ const Acceuil = () => {
   return (
     <div>
       <div className="Container">
+      <Header />
         <div className="Top">
           <Time></Time>
         </div>
 
+        <div className="main">
+
         <div className="left">
           <Blague></Blague>
           <Citation></Citation>
+          <div className="Historique">
+          <Recette></Recette>
+          </div>
         </div>
 
         <div className="center">
@@ -43,20 +50,21 @@ const Acceuil = () => {
             sapiente mollitia atque nesciunt iure, nobis aliquid minima impedit
             quas similique!
           </p>
+          <div>
+          <button className="markdown-button" onClick={Markdownzone}>
+            Creer un fichier Markdown
+          </button>
+        </div>
         </div>
 
         <div className="right">
-          <MocktailOfTheDay></MocktailOfTheDay>
-          <EvenementsHistoriques></EvenementsHistoriques>
-          <Recette></Recette>
+        <MocktailOfTheDay></MocktailOfTheDay>
+        <EvenementsHistoriques></EvenementsHistoriques>
         </div>
-
-        <div>
-          <button onClick={Markdownzone}>Creer un fichier Markdown</button>
         </div>
       </div>
     </div>
   );
 };
 
-export default Acceuil;
+export default Accueil;

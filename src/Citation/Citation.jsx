@@ -12,13 +12,14 @@ function Citation (){
 
 useEffect(() =>{
     fetchCitation()
-
 }, []);
 
 return(
-    <div>
+    <div className="container-api">
         <h1> Citation</h1>
+        <ul className="list">
         <li> {citation.advice} </li>
+        </ul>
     </div>
 )
 
