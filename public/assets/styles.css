@@ -137,13 +137,14 @@ h1 {
 }
 
 .prevu {
-  border: 2px solid red;
   width: 50%;
   padding: 1em;
   margin-top: 1em;
+  background-color: #8b8b8b;
 }
 
 .prevuh2 {
+  color: #4e3c3c;
   text-align: center;
   margin-top: 1em;
 }
