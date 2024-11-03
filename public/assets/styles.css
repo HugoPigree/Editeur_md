@@ -1,15 +1,16 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-body{
-  background-color: black;
+body {
+  background-image: url("fond.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   font-family: Arial, sans-serif;
- 
 }
 
 img {
@@ -19,23 +20,22 @@ img {
   padding-top: 10px;
 }
 
-h1{
-  font-size:large;
+h1 {
+  font-size: large;
   color: white;
   padding-bottom: 10px;
 }
 
-.center{
-  border : 2px solid red;
+.center {
+  border: 2px solid red;
 }
 
-.main{
-
+.main {
   display: flex;
   justify-content: space-around;
 
-  .center{
-    border : 2px solid red;
+  .center {
+    border: 2px solid red;
     color: white;
     max-width: 515px;
     display: flex;
@@ -44,34 +44,33 @@ h1{
     align-items: center;
     padding: 15px;
   }
-  
-  .left{
+
+  .left {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     max-width: 315px;
     color: yellow;
   }
-  
-  .right{
+
+  .right {
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
     flex-direction: column;
     max-width: 315px;
     color: yellow;
   }
 }
 
-.Top{
+.Top {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
-
 }
-.markdown-button{
+.markdown-button {
   border: 3px solid black;
   color: white;
   padding: 20px 20px;
@@ -81,7 +80,6 @@ h1{
   justify-content: center;
 }
 
-.Historique{
+.Historique {
   padding-top: 15px;
 }
-
